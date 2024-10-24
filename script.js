@@ -18,8 +18,32 @@ const animaisImg = document.querySelectorAll('.animais img');
 
 // retorna uma node list, permite método forEach() 
 const gridSectionNode = document.querySelectorAll('.grid-section');
-gridSectionNode.forEach(function (item, index) {
-  console.log(item.textContent + " - index: " + index)
-})
 
 /* Seletores DOM FIM */
+
+/* --------------------------------------------------------------------------- */
+
+/* forEach */
+
+const imgs = document.querySelectorAll('img');
+imgs.forEach(function (item, index) {
+  // console.log(item)
+});
+
+// getElementsByClassName não retorna um array, convertendo
+const titulos = document.getElementsByClassName('titulo');
+const titulosArray = Array.from(titulos);
+
+titulosArray.forEach(function (item) {
+  // console.log(item.textContent);
+});
+
+// arrow function
+const imgsArrow = document.querySelectorAll('img');
+
+// com único argumento não precisa de parenteses
+// retorno de uma linha é possível omitir as chaves
+imgs.forEach((item) => {
+  // console.log(item);
+});
+// imgs.forEach(item => console.log(item));
