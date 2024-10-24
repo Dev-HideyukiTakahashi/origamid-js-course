@@ -67,14 +67,33 @@ const animais2 = document.querySelector('.animais');
 animais2.attributes; // retorna todos os atributos
 animais2.attributes[0]; // primeiro atributo
 
-
 const img = document.querySelector('img');
 img.getAttribute('src'); // valor do src
 img.setAttribute('alt', 'Texto Altenativo'); // muda o campo alt
 img.hasAttribute('id') // true / false
 img.removeAttribute('alt'); // remove o campo alt
 
-
-
 /* Classes e atributos FIM */
+/* --------------------------------------------------------------------------- */
+
+/* Dimensões e Distâncias */
+
+// mesmos métodos para width
+const listaAnimais = document.querySelector('.animais-lista');
+listaAnimais.clientHeight; // height + padding
+listaAnimais.offsetHeight; // height + padding + border
+listaAnimais.scrollHeight; // height total, mesmo dentro do scroll
+
+listaAnimais.offsetTop; // distância em relação o topo
+listaAnimais.offsetLeft; // distância em relação a esquerda
+
+window.innerWidth; // width da janela
+window.innerHeight; // height da janela
+
+
+
+
+
+
+/* Dimensões e Distâncias */
 /* --------------------------------------------------------------------------- */
