@@ -90,10 +90,32 @@ listaAnimais.offsetLeft; // distância em relação a esquerda
 window.innerWidth; // width da janela
 window.innerHeight; // height da janela
 
-
-
-
-
-
-/* Dimensões e Distâncias */
+/* Dimensões e Distâncias FIM*/
 /* --------------------------------------------------------------------------- */
+
+/* Eventos */
+
+// elemento.addEventListener('click', function(){
+//   código aqui
+// });
+
+const img2 = document.querySelector('img');
+
+function callback(event) {
+  const currentTarget = event.currentTarget; // this
+  const target = event.target; // onde o clique ocorreu
+  const type = event.type; // tipo de evento (click nesse caso)
+  const path = event.path;
+}
+img.addEventListener('click', callback);
+
+
+function handleKeyboard(event) {
+  if (event.key === 'f') {
+    document.body.classList.toggle('fullscream')
+  }
+}
+window.addEventListener('keydown', handleKeyboard);
+/* Eventos FIM*/
+/* --------------------------------------------------------------------------- */
+
