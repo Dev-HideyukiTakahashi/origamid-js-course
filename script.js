@@ -45,7 +45,32 @@ function initAccordion() {
 /* Accordion list FIM */
 /* ------------------------------------------------------------------------------- */
 
+/* Scroll suave */
+// scroll suave do menu até a section correspondente
+
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('.menu a[href^="#"]');
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    const topo = section.offsetTop;
+    window.scrollTo({
+      top: topo,
+      behavior: 'smooth',
+    });
+  }
+
+  linksInternos.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+  });
+}
+
+/* Scroll suave FIM */
+/* ------------------------------------------------------------------------------- */
 
 /* INIT */
 initTabiNav();
 initAccordion();
+initScrollSuave();
