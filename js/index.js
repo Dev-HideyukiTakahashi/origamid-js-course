@@ -6,6 +6,7 @@ import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownmenu from "./modules/dropdown-menu.js";
 import initAnimaNumeros from "./modules/anima-numeros.js";
+import initHorarioFuncionamento from "./modules/date.js";
 
 initScrollSuave();
 initAnimaScroll();
@@ -15,3 +16,4 @@ initModal();
 initTooltip();
 initDropdownmenu();
 initAnimaNumeros();
+initHorarioFuncionamento();
