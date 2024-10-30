@@ -1,0 +1,19 @@
+.numeros-grid {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.numeros-grid h3 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: .5rem;
+}
+
+.numeros-grid span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #E54;
+}
