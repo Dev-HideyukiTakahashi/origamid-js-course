@@ -5,8 +5,8 @@ import initTabNav from "./modules/tabnav.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownmenu from "./modules/dropdown-menu.js";
-import initAnimaNumeros from "./modules/anima-numeros.js";
 import initHorarioFuncionamento from "./modules/date.js";
+import initFetchAnimais from "./modules/fetchanimais.js";
 
 initScrollSuave();
 initAnimaScroll();
@@ -15,5 +15,5 @@ initTabNav();
 initModal();
 initTooltip();
 initDropdownmenu();
-initAnimaNumeros();
 initHorarioFuncionamento();
+initFetchAnimais();
