@@ -13,3 +13,9 @@ https://regexr.com/
   * \D - nega todos dígitos
   * \s - seleciona quebra de linha,espaço e tab
   * \S - nega o que não é quebra de linha,espaço e tab
+&nbsp;
+* Linha de comando:
+  * https://ss64.com/ - página com varias linhas de comando para windows e linux
+&nbsp;
+* NPM:
+  * https://www.npmjs.com/
