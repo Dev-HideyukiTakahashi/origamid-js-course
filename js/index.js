@@ -1,4 +1,4 @@
-import initScrollSuave from "./modules/scroll-suave.js";
+import ScrollSuave from "./modules/scroll-suave.js";
 import initAnimaScroll from "./modules/scroll-animacao.js";
 import initAccordion from "./modules/acordion.js";
 import initTabNav from "./modules/tabnav.js";
@@ -8,7 +8,9 @@ import initDropdownmenu from "./modules/dropdown-menu.js";
 import initHorarioFuncionamento from "./modules/date.js";
 import initFetchAnimais from "./modules/fetchanimais.js";
 
-initScrollSuave();
+const scrollSuave = new ScrollSuave('a[href^="#"]');
+scrollSuave.init();
+
 initAnimaScroll();
 initAccordion();
 initTabNav();
